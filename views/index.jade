@@ -3,3 +3,8 @@ extends layout
 block content
   h1= title
   p Welcome to #{title}
+  button(onclick="window.signin();" value="Login")
+
+  script(src="https://cdn.auth0.com/js/lock-7.12.min.js")
+  script(src="/javascripts/lock-init.js")
+ 
